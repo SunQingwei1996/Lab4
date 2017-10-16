@@ -1,4 +1,4 @@
-
+//éæ­£å¼ä¿®æ”¹
 import java.awt.Desktop;
 import java.io.BufferedReader;
 import java.io.File;
@@ -17,9 +17,9 @@ public class l1 {
 	static List<String> shortpath;
 
 	public static void main(String[] arges) throws IOException {
-		System.out.println("ÇëÊäÈëÎÄ¼şµØÖ·£º");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ö·ï¿½ï¿½");
 		Scanner sc = new Scanner(System.in);
-		// System.out.println("file µÄµØÖ·ÊÇ£º"+sc.nextLine());
+		// System.out.println("file ï¿½Äµï¿½Ö·ï¿½Ç£ï¿½"+sc.nextLine());
 		String fileadress = sc.nextLine();
 		File file = new File(fileadress);
 		String filedetail = txt2String(file);
@@ -32,7 +32,7 @@ public class l1 {
 		}
 		// System.out.println(tmp);
 		int size = tmp.size();
-		String[] arr = (String[]) tmp.toArray(new String[size]);// ½«ËùÓĞµÄµ¥´ÊÈ¥ÖØ
+		String[] arr = (String[]) tmp.toArray(new String[size]);// ï¿½ï¿½ï¿½ï¿½ï¿½ĞµÄµï¿½ï¿½ï¿½È¥ï¿½ï¿½
 		int len = arr.length;
 		int[][] edge = new int[len][len];
 		for (int i = 0; i < len; i++) {
@@ -62,11 +62,11 @@ public class l1 {
 		 */
 		for (int i = 0; i < 10; i++) {
 			System.out.println(
-					"\n****************»¶Ó­À´µ½lab-1********************\n 0.ÍË³ö³ÌĞò\n1.ÓĞÏòÍ¼Õ¹Ê¾\n2.²éÑ¯ÇÅ½Ó´Ê\n3.ÊäÈëĞÂÎÄ±¾\n4.¼ÆËã×î¶ÌÂ·¾¶\n5.Ò»¸öµ¥´Êµ½ÆäËû½ÚµãµÄ×î¶ÌÂ·¾¶\n6.Ëæ»úÓÎ×ß\nÇëÑ¡ÔñÄãËùĞèµÄ¹¦ÄÜÇ°ÃæµÄĞòºÅ£º");
+					"\n****************ï¿½ï¿½Ó­ï¿½ï¿½ï¿½ï¿½lab-1********************\n 0.ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½\n1.ï¿½ï¿½ï¿½ï¿½Í¼Õ¹Ê¾\n2.ï¿½ï¿½Ñ¯ï¿½Å½Ó´ï¿½\n3.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½\n4.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½\n5.Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½\n6.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å£ï¿½");
 			Scanner scd = new Scanner(System.in);
-			System.out.print("ÇëÊäÈëÄãµÄÑ¡Ôñ:");
+			System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½:");
 			int num = scd.nextInt();
-			System.out.print("ÄúÊäÈëµÄÊÇ£º\t" + num + "\n");
+			System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½\t" + num + "\n");
 			switch (num) {
 			case 1: {
 				GraphViz gv = new GraphViz();
@@ -87,23 +87,23 @@ public class l1 {
 				break;
 			}
 			case 2: {
-				System.out.println("ÇëÊäÈëÁ½¸öÒª²éÑ¯µÄµ¥´Ê£º\nµÚÒ»¸öµ¥´ÊÊÇ£º");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Ñ¯ï¿½Äµï¿½ï¿½Ê£ï¿½\nï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½");
 				Scanner sc1 = new Scanner(System.in);
 				String word1 = sc1.next();
-				System.out.println("¼üÅÌÊäÈëµÄÄÚÈİÊÇ£º" + word1);
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" + word1);
 
-				System.out.println("ÇëÊäÈëÁ½¸öÒª²éÑ¯µÄµ¥´Ê£º\nµÚ¶ş¸öµ¥´ÊÊÇ£º");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Ñ¯ï¿½Äµï¿½ï¿½Ê£ï¿½\nï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½");
 				Scanner sc2 = new Scanner(System.in);
 				String word2 = sc2.next();
-				System.out.println("¼üÅÌÊäÈëµÄÄÚÈİÊÇ£º" + word2);
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" + word2);
 
 				String resut2 = queryBridgeWords(word1, word2, edge, arr);
 				break;
 			}
 			case 3: {
-				System.out.println("¼üÅÌÊäÈëfilesÊÇ£º");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½filesï¿½Ç£ï¿½");
 				Scanner sc10 = new Scanner(System.in);
-				// System.out.println("¼üÅÌÊäÈëµÄÄÚÈİÊÇ£º"+sc10.nextLine());
+				// System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½"+sc10.nextLine());
 				String str10 = sc10.nextLine();
 				String[] temp10 = deal(str10);
 				String str13 = generateNewText(tempstr, temp10);
@@ -112,30 +112,30 @@ public class l1 {
 			}
 
 			case 4: {
-				System.out.println("¼üÅÌÊäÈëµÄword1ÊÇ£º");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½word1ï¿½Ç£ï¿½");
 				Scanner sc11 = new Scanner(System.in);
 				String strr1 = sc11.next();
-				// System.out.println("¼üÅÌÊäÈëµÄÄÚÈİÊÇ£º"+sc11.next());
-				System.out.println("¼üÅÌÊäÈëµÄword2ÊÇ£º");
+				// System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½"+sc11.next());
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½word2ï¿½Ç£ï¿½");
 				Scanner sc12 = new Scanner(System.in);
-				// System.out.println("¼üÅÌÊäÈëµÄÄÚÈİÊÇ£º"+sc12.next());
+				// System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½"+sc12.next());
 				String strr2 = sc12.next();
 				String result4 = calcShortestPath(strr1, strr2, arr, edge);
 
 				break;
 			}
 			case 5: {
-				System.out.println("¼üÅÌÊäÈëµÄwordÊÇ£º");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½wordï¿½Ç£ï¿½");
 				Scanner sc14 = new Scanner(System.in);
-				// System.out.println("¼üÅÌÊäÈëµÄÄÚÈİÊÇ£º"+sc14.next());
+				// System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½"+sc14.next());
 				String strr14 = sc14.next();
 				String result15 = calcShortestPath(strr14, arr, edge);
 				break;
 			}
 			case 6: {
-				// System.out.println("¼üÅÌÊäÈëµÄÆğÊ¼µÄµ¥´Ê£º");
+				// System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½Äµï¿½ï¿½Ê£ï¿½");
 				// Scanner sc15 =new Scanner(System.in);
-				// System.out.println("¼üÅÌÊäÈëµÄÄÚÈİÊÇ£º"+sc15.next());
+				// System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½"+sc15.next());
 				// String strr15=sc15.next();
 				int number = new Random().nextInt(len);
 				String strr15 = arr[number];
@@ -184,7 +184,7 @@ public class l1 {
 			strr15 = arr[c.get(num)];
 			System.out.print(strr15 + "--->");
 			if (jiance[a][c.get(num)] > 1) {
-				System.out.println("\nÓĞÖØ¸´µÄ±ß³öÏÖ");
+				System.out.println("\nï¿½ï¿½ï¿½Ø¸ï¿½ï¿½Ä±ß³ï¿½ï¿½ï¿½");
 				return null;
 			}
 			randomWalk(strr15, arr, edge, jiance);
@@ -205,7 +205,7 @@ public class l1 {
 		return "true";
 	}
 
-	// ·µ»ØÄ³¸öÔªËØµÄÏÂ±ê
+	// ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½Ôªï¿½Øµï¿½ï¿½Â±ï¿½
 	public static List<Integer> xiabiao(int j, int len, int[][] a) {
 
 		List<Integer> c = new ArrayList<Integer>();
@@ -218,13 +218,13 @@ public class l1 {
 		return c;
 	}
 
-	// ¶ÁÈ¡ÎÄ¼ş
+	// ï¿½ï¿½È¡ï¿½Ä¼ï¿½
 	public static String txt2String(File file) {
 		StringBuilder result = new StringBuilder();
 		try {
-			BufferedReader br = new BufferedReader(new FileReader(file));// ¹¹ÔìÒ»¸öBufferedReaderÀàÀ´¶ÁÈ¡ÎÄ¼ş
+			BufferedReader br = new BufferedReader(new FileReader(file));// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½BufferedReaderï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½Ä¼ï¿½
 			String s = null;
-			while ((s = br.readLine()) != null) {// Ê¹ÓÃreadLine·½·¨£¬Ò»´Î¶ÁÒ»ĞĞ
+			while ((s = br.readLine()) != null) {// Ê¹ï¿½ï¿½readLineï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½Ò»ï¿½ï¿½
 				result.append(System.lineSeparator() + s);
 			}
 
@@ -235,7 +235,7 @@ public class l1 {
 		return result.toString();
 	}
 
-	// ´¦Àí×Ö·û´®
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
 	public static String[] deal(String str) {
 		int num = str.length();
 		char[] temp = str.toCharArray();
@@ -246,14 +246,14 @@ public class l1 {
 			}
 		}
 		String str1 = new String(temp);
-		str1 = str1.toLowerCase();// ½«ËùÓĞµÄ×ÖÄ¸×ª»¯ÎªĞ¡Ğ´×ÖÄ¸
+		str1 = str1.toLowerCase();// ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½Ä¸×ªï¿½ï¿½ÎªĞ¡Ğ´ï¿½ï¿½Ä¸
 		String[] tempstr = str1.split(" ");
 		List<String> tmp = new ArrayList<String>();
 		for (String str2 : tempstr) {
 			if (str2 != null && str2.length() != 0) {
 				tmp.add(str2);
 			}
-		} // È¥³ıstringÊı×éÖĞµÄ¶àÓàµÄ¿ÕÔªËØ
+		} // È¥ï¿½ï¿½stringï¿½ï¿½ï¿½ï¿½ï¿½ĞµÄ¶ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½Ôªï¿½ï¿½
 		tempstr = tmp.toArray(new String[0]);
 		return tempstr;
 	}
@@ -268,7 +268,7 @@ public class l1 {
 		return -1;
 	}
 
-	// ²éÕÒ×Ö·û´®¸öÊı
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public static int appearNumber(String srcText, String findText) {
 		int count = 0;
 		Pattern p = Pattern.compile(findText);
@@ -322,12 +322,12 @@ public class l1 {
 
 			int len = temp.length;
 			results.add(temp[len - 1]);
-			
+
 			result1 = results.get(0) + " ";
 			for (int j = 1; j < results.size(); j++) {
 				result1 = result1 + results.get(j) + " ";
 			}
-			
+
 		}
 		return result1;
 	}
@@ -346,7 +346,7 @@ public class l1 {
 		return sList;
 	}
 
-	// ¼ÆËãÁ½¸öµ¥´ÊÖ®¼äµÄ×î¶ÌÂ·¾¶
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½
 	private static String calcShortestPath(String strr1, String strr2, String[] arr, int[][] edge) {
 		int MAXV = arr.length;
 		int[][] A = new int[MAXV][MAXV];
