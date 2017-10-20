@@ -33,80 +33,79 @@ import java.io.InputStreamReader;
  * </dl>
  *
  * @version v0.4, 2011/02/05 (February) -- Patch of Keheliya Gallaba is added. Now you
- * can specify the type of the output file: gif, dot, fig, pdf, ps, svg, png, etc.
+ *    can specify the type of the output file: gif, dot, fig, pdf, ps, svg, png, etc;
  * @version v0.3, 2010/11/29 (November) -- Windows support + ability 
- * to read the graph from a text file
+ *    to read the graph from a text file;
  * @version v0.2, 2010/07/22 (July) -- bug fix
  * @version v0.1, 2003/12/04 (December) -- first release
  * @author  Laszlo Szathmary (<a href="jabba.laci@gmail.com">jabba.laci@gmail.com</a>)
  */
-public class GraphViz
-{
-   /**
+public class GraphViz {
+  /**
     * The dir. where temporary files will be created.
     */
-   //private static String TEMP_DIR = "/tmp"; // Linux
-   private static String TEMP_DIR = "C:\\temp"; // Windows
-
-/**
+  //private static String TEMP_DIR = "/tmp"; // Linux
+  private static String TEMP_DIR = "C:\\temp"; // Windows
+  /**
     * Where is your dot program located? It will be called externally.
     */
   // private static String DOT = "/usr/bin/dot"; // Linux
-   private static String DOT = "C:\\Program Files (x86)\\Graphviz2.38\\bin\\dot.exe"; // Windows
+  private static String DOT = "C:\\Program Files (x86)\\Graphviz2.38\\bin\\dot.exe"; // Windows
 
-/**
+  /**
     * The source of the graph written in dot language.
     */
- private StringBuilder graph = new StringBuilder();
+  private StringBuilder graph = new StringBuilder();
 
-/**
+  /**
     * Constructor: creates a new GraphViz object that will contain
     * a graph.
     */
-   public GraphViz() {
-   }
+  public GraphViz() {
+  }
 
-/**
+  /**
     * Returns the graph's source description in dot language.
     * @return Source of the graph in dot language.
     */
-   public String getDotSource() {
-      return graph.toString();
-   }
+  public String getDotSource() {
+    return graph.toString();
+  }
 
-/**
+  /**
     * Adds a string to the graph's source (without newline).
     */
-   public void add(String line) {
-      graph.append(line);
-   }
+  public void add(String line) {
+    graph.append(line);
+  }
 
-/**
+  /**
     * Adds a string to the graph's source (with newline).
     */
-   public void addln(String line) {
-      graph.append(line + "\n");
-   }
+  public void addln(String line) {
+    graph.append(line + "\n");
+  }
 
-/**
+  /**
     * Adds a newline to the graph's source.
     */
-   public void addln() {
-      graph.append('\n');
-   }
+  public void addln() {
+    graph.append('\n');
+  }
 
-/**
+  /**
     * Returns the graph as an image in binary format.
     * @param dot_source Source of the graph to be drawn.
-    * @param type Type of the output image to be produced, e.g.: gif, dot, fig, pdf, ps, svg, png.
+    * @param type Type of the output image to be produced, e.g.: 
+    * gif, dot, fig, pdf, ps, svg, png.
     * @return A byte array containing the image of the graph.
     */
-   public byte[] getGraph(String dot_source, String type)
-   {
-      File dot;
-      byte[] img_stream = null;
+  public byte[] getGraph(String dot_source, String type)
+  {
+    File dot;
+    byte[] img_stream = null;
    
-      try {
+    try {
          dot = writeDotSourceToFile(dot_source);
          if (dot != null)
          {
