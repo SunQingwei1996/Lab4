@@ -1,4 +1,4 @@
-//非正式修改
+﻿//非正式修改
 import java.awt.Desktop;
 import java.io.BufferedReader;
 import java.io.File;
@@ -17,9 +17,9 @@ public class l1 {
 	static List<String> shortpath;
 
 	public static void main(String[] arges) throws IOException {
-		System.out.println("�������ļ���ַ��");
+		System.out.println("请输入文件地址：");
 		Scanner sc = new Scanner(System.in);
-		// System.out.println("file �ĵ�ַ�ǣ�"+sc.nextLine());
+		// System.out.println("file 的地址是："+sc.nextLine());
 		String fileadress = sc.nextLine();
 		File file = new File(fileadress);
 		String filedetail = txt2String(file);
@@ -32,7 +32,7 @@ public class l1 {
 		}
 		// System.out.println(tmp);
 		int size = tmp.size();
-		String[] arr = (String[]) tmp.toArray(new String[size]);// �����еĵ���ȥ��
+		String[] arr = (String[]) tmp.toArray(new String[size]);// 将所有的单词去重
 		int len = arr.length;
 		int[][] edge = new int[len][len];
 		for (int i = 0; i < len; i++) {
@@ -62,11 +62,11 @@ public class l1 {
 		 */
 		for (int i = 0; i < 10; i++) {
 			System.out.println(
-					"\n****************��ӭ����lab-1********************\n 0.�˳�����\n1.����ͼչʾ\n2.��ѯ�ŽӴ�\n3.�������ı�\n4.��������·��\n5.һ�����ʵ������ڵ�������·��\n6.��������\n��ѡ���������Ĺ���ǰ�������ţ�");
+					"\n****************欢迎来到lab-1********************\n 0.退出程序\n1.有向图展示\n2.查询桥接词\n3.输入新文本\n4.计算最短路径\n5.一个单词到其他节点的最短路径\n6.随机游走\n请选择你所需的功能前面的序号：");
 			Scanner scd = new Scanner(System.in);
-			System.out.print("����������ѡ��:");
+			System.out.print("请输入你的选择:");
 			int num = scd.nextInt();
-			System.out.print("���������ǣ�\t" + num + "\n");
+			System.out.print("您输入的是：\t" + num + "\n");
 			switch (num) {
 			case 1: {
 				GraphViz gv = new GraphViz();
@@ -83,7 +83,7 @@ public class l1 {
 				String type = "png";
 				File out = new File("tmpout." + type);
 				gv.writeGraphToFile(gv.getGraph(gv.getDotSource(), type), out);
-				Desktop.getDesktop().open(new File("tmpout.png"));
+				//Desktop.getDesktop().open(new File("tmpout.png"));
 				break;
 			}
 			case 2: {
